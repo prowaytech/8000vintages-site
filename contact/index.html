@@ -655,6 +655,8 @@ html[data-lang="ja"] td{font-family:var(--b-ja); font-size:13px}
 .meter-t{height:6px; background:var(--surface-2); border:1px solid var(--rule)}
 .meter-b{height:100%; background:var(--accent)}
 .meter-b.olive{background:var(--olive)}
+.card .deflist.deflist--card > div{grid-template-columns:minmax(0,1fr); gap:4px; padding:12px 0}
+.card .deflist.deflist--card dd{overflow-wrap:anywhere; min-width:0}
 </style>
 
 <!-- ============================== ABOUT ============================== -->
@@ -730,7 +732,7 @@ html[data-lang="ja"] td{font-family:var(--b-ja); font-size:13px}
         <article class="card" style="border:1px solid var(--rule); padding:24px; background:var(--surface)">
           <span class="card-meta en">Company details</span><span class="card-meta ja">会社情報</span>
           <h3 class="en">8000 Vintages Co., Ltd.</h3><h3 class="ja">8000 Vintages 株式会社</h3>
-          <dl class="deflist" style="margin-top:6px">
+          <dl class="deflist deflist--card" style="margin-top:6px">
             <div><dt class="en">Email</dt><dt class="ja">メール</dt><dd><a href="mailto:ajika@8000vintages.jp">ajika@8000vintages.jp</a></dd></div>
             <div><dt class="en">Telephone</dt><dt class="ja">電話</dt><dd><a href="tel:+81354624706">03-5462-4706</a></dd></div>
             <div><dt class="en">Address</dt><dt class="ja">所在地</dt><dd class="en">2F Minami-Shinagawa N Building, 2-2-10 Minami-Shinagawa, Shinagawa-ku, Tokyo 140-0004</dd><dd class="ja">〒140-0004 東京都品川区南品川2-2-10 南品川Nビル2F</dd></div>
