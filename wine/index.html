@@ -655,6 +655,29 @@ html[data-lang="ja"] td{font-family:var(--b-ja); font-size:13px}
 .meter-t{height:6px; background:var(--surface-2); border:1px solid var(--rule)}
 .meter-b{height:100%; background:var(--accent)}
 .meter-b.olive{background:var(--olive)}
+
+/* ---- portfolio list (real wines) ---- */
+.wl-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-top:30px}
+.wl-img{min-width:0; overflow:hidden}
+.wl-card{background:var(--bg); display:flex; flex-direction:column; min-width:0; scroll-margin-top:96px}
+.wl-img{aspect-ratio:4/5; background:var(--surface); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:22px 16px 14px; position:relative}
+.wl-img img{display:block; max-width:100%; height:100%; width:auto; object-fit:contain; filter:drop-shadow(0 10px 14px rgba(0,0,0,.18))}
+.wl-img .wph{display:block; height:56%; width:17%; max-width:56px; opacity:.55}
+.wl-img .wph-t{font-family:var(--b-en); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-top:10px}
+.wl-img .wph-t .ja{font-size:11px; letter-spacing:.08em}
+.wl-body{padding:18px 18px 22px; display:flex; flex-direction:column; gap:10px; flex:1}
+.wl-pr{font-family:var(--b-en); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--accent)}
+.wl-pr.ja{font-family:var(--b-ja); font-size:11.5px; letter-spacing:.06em; text-transform:none}
+.wl-nm{font-size:21px; line-height:1.22}
+.wl-nm .ja{font-family:var(--d-ja); font-size:19px}
+.wl-v{font-family:var(--b-en); font-size:13px; color:var(--muted); font-variant-numeric:tabular-nums; letter-spacing:.04em}
+.wl-dl{margin:0; display:grid; gap:4px; font-size:13px}
+.wl-dl > div{display:grid; grid-template-columns:72px minmax(0,1fr); gap:8px}
+.wl-dl dt{font-family:var(--b-en); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); padding-top:3px}
+.wl-dl dt .ja{font-family:var(--b-ja); font-size:11px; letter-spacing:.04em}
+.wl-dl dd{margin:0; color:var(--text-2)}
+.wl-note{font-size:13.5px; line-height:1.6; color:var(--text-2); margin:0}
+.wl-tags{margin-top:auto; padding-top:6px}
 </style>
 
 <!-- ============================== ABOUT ============================== -->
@@ -669,6 +692,154 @@ html[data-lang="ja"] td{font-family:var(--b-ja); font-size:13px}
       <h1 class="ja" style="max-width:19ch">最初の一杯の前に知っておきたいこと、そしてその後に必要なことのほとんど。</h1>
       <p class="hero-sub en" style="max-width:58ch">A working guide, in Japanese and English, to the vessel, the styles, the grapes and the regions. Written to be quoted by sommeliers and understood by everyone else.</p>
       <p class="hero-sub ja" style="max-width:44ch">容器、スタイル、品種、産地についての実用的な解説を日英両言語で。ソムリエが引用でき、それ以外の方にも伝わるように書いています。</p>
+    </div>
+  </section>
+
+  <!-- OUR WINES (portfolio) -->
+  <section class="band" id="our-wines">
+    <div class="wrap">
+      <div class="ed">
+        <div class="rail"><span class="eyebrow en">Our wines</span><span class="eyebrow ja">取扱ワイン</span></div>
+        <div>
+          <h2 class="en">The wines we import now.</h2>
+          <h2 class="ja">現在輸入しているワイン</h2>
+          <p class="lede en" style="margin-top:16px; max-width:56ch">Small family producers from Kakheti and Racha, shipped direct from Georgia. Each listing states the grape, region and method.</p>
+          <p class="lede ja" style="margin-top:16px; max-width:40ch">カヘティとラチャの小さな家族経営の造り手から、ジョージアより直接輸入。品種・産地・醸造方法を一本ずつ明記しています。</p>
+        </div>
+      </div>
+      <div class="wl-grid">
+        <article class="wl-card" id="dakishvili-mtsvane-chardonnay-2025">
+          <div class="wl-img"><img src="/img/wines/dakishvili-mtsvane-chardonnay-2025.webp" width="408" height="820" loading="lazy" decoding="async" alt="Dakishvili Family Selection Mtsvane–Chardonnay 2025"></div>
+          <div class="swatch sw-white"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Dakishvili Family Selection · Kakheti</span><span class="wl-pr ja">ダキシュヴィリ・ファミリー・セレクション（カヘティ）</span>
+            <h3 class="wl-nm"><span class="en">Mtsvane–Chardonnay</span><span class="ja">ムツヴァネ＆シャルドネ</span> <span class="wl-v">2025</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Kakhuri Mtsvane · Chardonnay</span><span class="ja">カフリ・ムツヴァネ・シャルドネ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Classic (European) method</span><span class="ja">ヨーロッパ式（クラシック）</span></dd></div>
+            </dl>
+            <p class="wl-note en">Georgian Mtsvane blended with Chardonnay from the family’s vineyards in Kakheti.</p><p class="wl-note ja">一家のカヘティの畑で育つジョージア品種ムツヴァネとシャルドネのブレンド。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">White</span><span class="ja">白</span></span><span class="tag"><span class="en">Kakheti</span><span class="ja">カヘティ</span></span><span class="tag">13%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="dakishvili-kisi-2025">
+          <div class="wl-img"><img src="/img/wines/dakishvili-kisi-2025.webp" width="408" height="820" loading="lazy" decoding="async" alt="Dakishvili Family Selection Kisi 2025"></div>
+          <div class="swatch sw-white"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Dakishvili Family Selection · Kakheti</span><span class="wl-pr ja">ダキシュヴィリ・ファミリー・セレクション（カヘティ）</span>
+            <h3 class="wl-nm"><span class="en">Kisi</span><span class="ja">キシ</span> <span class="wl-v">2025</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Kisi</span><span class="ja">キシ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Classic (European) method</span><span class="ja">ヨーロッパ式（クラシック）</span></dd></div>
+            </dl>
+            <p class="wl-note en">Grapefruit, tropical fruit and candied pear. Serve at 8–10 °C with grilled trout or seafood.</p><p class="wl-note ja">グレープフルーツ、トロピカルフルーツ、洋梨の砂糖漬けの香り。8〜10℃で、マスのグリルや魚介と。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">White</span><span class="ja">白</span></span><span class="tag"><span class="en">Kakheti</span><span class="ja">カヘティ</span></span><span class="tag">13%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="dakishvili-kisi-amber-2024">
+          <div class="wl-img"><img src="/img/wines/dakishvili-kisi-amber-2024.webp" width="408" height="820" loading="lazy" decoding="async" alt="Dakishvili Family Selection Kisi Amber 2024"></div>
+          <div class="swatch sw-amber"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Dakishvili Family Selection · Kakheti</span><span class="wl-pr ja">ダキシュヴィリ・ファミリー・セレクション（カヘティ）</span>
+            <h3 class="wl-nm"><span class="en">Kisi Amber</span><span class="ja">キシ アンバー</span> <span class="wl-v">2024</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Kisi</span><span class="ja">キシ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></dd></div>
+            </dl>
+            <p class="wl-note en">Hand-made in qvevri. Dried apricot, almond and spice.</p><p class="wl-note ja">クヴェヴリで手仕込み。干しアンズ、アーモンド、スパイスの香り。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">Amber</span><span class="ja">アンバー</span></span><span class="tag"><span class="en">Kakheti</span><span class="ja">カヘティ</span></span><span class="tag tag--olive"><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></span><span class="tag">13%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="dakishvili-saperavi-2024">
+          <div class="wl-img"><img src="/img/wines/dakishvili-saperavi-2024.webp" width="408" height="820" loading="lazy" decoding="async" alt="Dakishvili Family Selection Saperavi 2024"></div>
+          <div class="swatch sw-red"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Dakishvili Family Selection · Kakheti</span><span class="wl-pr ja">ダキシュヴィリ・ファミリー・セレクション（カヘティ）</span>
+            <h3 class="wl-nm"><span class="en">Saperavi</span><span class="ja">サペラヴィ</span> <span class="wl-v">2024</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Saperavi</span><span class="ja">サペラヴィ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></dd></div>
+            </dl>
+            <p class="wl-note en">Hand-made in qvevri. Pomegranate, ripe dark fruit and a hint of coffee.</p><p class="wl-note ja">クヴェヴリで手仕込み。ザクロ、熟した黒系果実、ほのかなコーヒーの香り。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">Red</span><span class="ja">赤</span></span><span class="tag"><span class="en">Kakheti</span><span class="ja">カヘティ</span></span><span class="tag tag--olive"><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></span><span class="tag">13%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="dakishvili-rkatsiteli-amber-2023">
+          <div class="wl-img"><img src="/img/wines/dakishvili-rkatsiteli-amber-2023.webp" width="410" height="820" loading="lazy" decoding="async" alt="Dakishvili Family Selection Rkatsiteli Amber 2023"></div>
+          <div class="swatch sw-amber"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Dakishvili Family Selection · Kakheti</span><span class="wl-pr ja">ダキシュヴィリ・ファミリー・セレクション（カヘティ）</span>
+            <h3 class="wl-nm"><span class="en">Rkatsiteli Amber</span><span class="ja">ルカツィテリ アンバー</span> <span class="wl-v">2023</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Rkatsiteli</span><span class="ja">ルカツィテリ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></dd></div>
+            </dl>
+            <p class="wl-note en">Hand-made in qvevri. Candied grapes and dried fruit, with a firm amber grip.</p><p class="wl-note ja">クヴェヴリで手仕込み。ブドウの砂糖漬けやドライフルーツの香りと、しっかりしたアンバーの骨格。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">Amber</span><span class="ja">アンバー</span></span><span class="tag"><span class="en">Kakheti</span><span class="ja">カヘティ</span></span><span class="tag tag--olive"><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></span><span class="tag">13%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="anbani-rkatsiteli-kisi-2020">
+          <div class="wl-img"><svg class="wph" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 4h12v46c0 10 14 16 14 34v108a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V84c0-18 14-24 14-34z" fill="#C8871F" opacity=".85"/><rect x="14" y="112" width="32" height="42" fill="var(--bg)" opacity=".9"/></svg><span class="wph-t"><span class="en">Bottle photo coming soon</span><span class="ja">写真準備中</span></span></div>
+          <div class="swatch sw-amber"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Wine Anbani · Akhmeta, Kakheti</span><span class="wl-pr ja">ワイン・アンバニ（カヘティ州アフメタ）</span>
+            <h3 class="wl-nm"><span class="en">Rkatsiteli–Kisi Amber</span><span class="ja">ルカツィテリ＆キシ アンバー</span> <span class="wl-v">2020</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Rkatsiteli · Kisi</span><span class="ja">ルカツィテリ・キシ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></dd></div>
+            </dl>
+            <p class="wl-note en">Small family estate working only its own Kisi and Rkatsiteli vineyards, made the traditional qvevri way.</p><p class="wl-note ja">自社畑のキシとルカツィテリのみを使い、伝統的なクヴェヴリ製法で造る小さな家族経営のワイナリー。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">Amber</span><span class="ja">アンバー</span></span><span class="tag"><span class="en">Kakheti</span><span class="ja">カヘティ</span></span><span class="tag tag--olive"><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></span><span class="tag">14%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="bimbili-aleksandrouli-mujuretuli-2023">
+          <div class="wl-img"><svg class="wph" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 4h12v46c0 10 14 16 14 34v108a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V84c0-18 14-24 14-34z" fill="#6A1A28" opacity=".85"/><rect x="14" y="112" width="32" height="42" fill="var(--bg)" opacity=".9"/></svg><span class="wph-t"><span class="en">Bottle photo coming soon</span><span class="ja">写真準備中</span></span></div>
+          <div class="swatch sw-red"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Bimbili · Gurgenidze Family Winery, Racha</span><span class="wl-pr ja">ビンビリ（グルゲニゼ家ワイナリー・ラチャ）</span>
+            <h3 class="wl-nm"><span class="en">Aleksandrouli–Mujuretuli</span><span class="ja">アレクサンドロウリ＆ムジュレトゥリ</span> <span class="wl-v">2023</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Aleksandrouli · Mujuretuli</span><span class="ja">アレクサンドロウリ・ムジュレトゥリ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></dd></div>
+            </dl>
+            <p class="wl-note en">Dry red from the two native grapes of Racha’s Khvanchkara area, made in qvevri.</p><p class="wl-note ja">ラチャ地方フヴァンチカラ周辺の二つの土着品種から造る、クヴェヴリ仕込みの辛口赤。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">Red</span><span class="ja">赤</span></span><span class="tag"><span class="en">Racha</span><span class="ja">ラチャ</span></span><span class="tag tag--olive"><span class="en">Qvevri</span><span class="ja">クヴェヴリ</span></span><span class="tag">14%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="bimbili-rachuli-tetra-reserve-2024">
+          <div class="wl-img"><svg class="wph" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 4h12v46c0 10 14 16 14 34v108a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V84c0-18 14-24 14-34z" fill="#C9C089" opacity=".85"/><rect x="14" y="112" width="32" height="42" fill="var(--bg)" opacity=".9"/></svg><span class="wph-t"><span class="en">Bottle photo coming soon</span><span class="ja">写真準備中</span></span></div>
+          <div class="swatch sw-white"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Bimbili · Gurgenidze Family Winery, Racha</span><span class="wl-pr ja">ビンビリ（グルゲニゼ家ワイナリー・ラチャ）</span>
+            <h3 class="wl-nm"><span class="en">Rachuli Tetra Reserve</span><span class="ja">ラチュリ・テトラ リザーブ</span> <span class="wl-v">2024</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Rachuli Tetra</span><span class="ja">ラチュリ・テトラ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">French oak, 3 months</span><span class="ja">フレンチオーク樽 3か月</span></dd></div>
+            </dl>
+            <p class="wl-note en">Old vines in the villages of Itsa and Sadmeli. Light aroma, fresh acidity, a long aromatic finish.</p><p class="wl-note ja">イツァ村とサドメリ村の古木から。穏やかな香り、心地よい酸、長く香る余韻。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">White</span><span class="ja">白</span></span><span class="tag"><span class="en">Racha</span><span class="ja">ラチャ</span></span><span class="tag">12%</span></div>
+          </div>
+        </article>
+        <article class="wl-card" id="irodioni-rachuli-tetra-amber-2020">
+          <div class="wl-img"><svg class="wph" viewBox="0 0 60 200" aria-hidden="true"><path d="M24 4h12v46c0 10 14 16 14 34v108a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V84c0-18 14-24 14-34z" fill="#C8871F" opacity=".85"/><rect x="14" y="112" width="32" height="42" fill="var(--bg)" opacity=".9"/></svg><span class="wph-t"><span class="en">Bottle photo coming soon</span><span class="ja">写真準備中</span></span></div>
+          <div class="swatch sw-amber"></div>
+          <div class="wl-body">
+            <span class="wl-pr en">Irodioni · Itsis Marani, Racha</span><span class="wl-pr ja">イロディオニ（イツィス・マラニ・ラチャ）</span>
+            <h3 class="wl-nm"><span class="en">Rachuli Tetra Amber</span><span class="ja">ラチュリ・テトラ アンバー</span> <span class="wl-v">2020</span></h3>
+            <dl class="wl-dl">
+              <div><dt><span class="en">Grapes</span><span class="ja">品種</span></dt><dd><span class="en">Rachuli Tetra</span><span class="ja">ラチュリ・テトラ</span></dd></div>
+              <div><dt><span class="en">Method</span><span class="ja">醸造</span></dt><dd><span class="en">Skin-contact amber</span><span class="ja">果皮浸漬（アンバー）</span></dd></div>
+            </dl>
+            <p class="wl-note en">A rare amber wine from Racha’s white Tetra grape, made by the same family as Bimbili.</p><p class="wl-note ja">ラチャの白ブドウ「テトラ」から造る珍しいアンバーワイン。ビンビリと同じ一家による一本。</p>
+            <div class="tags wl-tags"><span class="tag tag--amber"><span class="en">Amber</span><span class="ja">アンバー</span></span><span class="tag"><span class="en">Racha</span><span class="ja">ラチャ</span></span><span class="tag">12%</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="small en" style="margin-top:18px">Price on request. We are a wholesaler and do not sell direct to consumers. Vintages and availability change with each shipment.</p>
+      <p class="small ja" style="margin-top:18px">価格はお問い合わせください。当社は卸売業のため、一般のお客様への直接販売は行っておりません。ヴィンテージと在庫は入荷ごとに変わります。</p>
+      <div class="btns" style="margin-top:18px">
+        <button class="btn btn--sm" data-go="business"><span class="en">Wholesale enquiry</span><span class="ja">卸売のお問い合わせ</span> <span class="arw">→</span></button>
+      </div>
     </div>
   </section>
 
